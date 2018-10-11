@@ -49,6 +49,7 @@
     "testRegex": "^.+\\.spec\\.ts$"
   },
   "dependencies": {
+    "csx": "^9.0.0",
     "typestyle": "^2.0.1"
   },
   "peerDependencies": {
