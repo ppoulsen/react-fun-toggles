@@ -1,17 +1,24 @@
 import React from 'react';
 
-import * as styles from './styles';
+import { getStyles, IGetStylesOptions } from './styles';
 
 interface ISmileyToggleProps {
   checked?: boolean;
+  checkedColor?: string;
   defaultChecked?: boolean;
+  height?: number;
   onChange?: (checked: boolean) => void;
+  uncheckedColor?: string;
 }
 
 let counter = 0;
 export default class SmileyToggle extends React.PureComponent<
   ISmileyToggleProps
 > {
+  public static defaultProps = {
+    height: 30,
+  };
+
   public id: string;
 
   constructor(props: ISmileyToggleProps) {
@@ -33,6 +40,8 @@ export default class SmileyToggle extends React.PureComponent<
       conditionalInputProps.defaultChecked = this.props.defaultChecked;
     }
 
+    const styles = this.getStyles();
+
     return (
       <div className={styles.toggle} onClick={this.onClick}>
         <input
@@ -47,6 +56,20 @@ export default class SmileyToggle extends React.PureComponent<
       </div>
     );
   }
+
+  private getStyles = () => {
+    const options: IGetStylesOptions = {};
+    if (this.props.hasOwnProperty('height')) {
+      options.height = this.props.height;
+    }
+    if (this.props.hasOwnProperty('checkedColor')) {
+      options.checkedColor = this.props.checkedColor;
+    }
+    if (this.props.hasOwnProperty('uncheckedColor')) {
+      options.uncheckedColor = this.props.uncheckedColor;
+    }
+    return getStyles(options);
+  };
 
   private onClick = (e: React.SyntheticEvent<HTMLElement>) => {
     const target = e.target as HTMLElement;

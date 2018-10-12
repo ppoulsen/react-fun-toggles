@@ -30,4 +30,7 @@ class ControlledToggle extends React.PureComponent<
 
 storiesOf('Button', module)
   .add('uncontrolled', () => <SmileyToggle defaultChecked={true} />)
-  .add('controlled', () => <ControlledToggle />);
+  .add('controlled', () => <ControlledToggle />)
+  .add('configured', () => (
+    <SmileyToggle height={70} checkedColor="#27986d" uncheckedColor="#c646bd" />
+  ));
