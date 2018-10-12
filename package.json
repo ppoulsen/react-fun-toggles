@@ -1,10 +1,10 @@
 {
-  "name": "smiley-toggles",
+  "name": "react-fun-toggles",
   "version": "1.0.0",
-  "description": "React Component for Smiley Face Toggle Inputs",
+  "description": "React Components for Fun Toggle Inputs",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
-  "repository": "https://github.com/ppoulsen/smiley-toggles.git",
+  "repository": "https://github.com/ppoulsen/react-fun-toggles.git",
   "author": "Paul Poulsen <ppoulsen21@gmail.com>",
   "license": "MIT",
   "private": false,
