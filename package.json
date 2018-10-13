@@ -10,6 +10,10 @@
     "smile"
   ],
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
   "typings": "lib/index.d.ts",
   "repository": "https://github.com/ppoulsen/react-fun-toggles.git",
   "homepage": "https://github.com/ppoulsen/react-fun-toggles#readme",
