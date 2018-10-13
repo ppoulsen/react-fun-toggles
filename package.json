@@ -2,9 +2,18 @@
   "name": "react-fun-toggles",
   "version": "1.0.0",
   "description": "React Components for Fun Toggle Inputs",
+  "keywords": [
+    "react",
+    "components",
+    "toggle",
+    "checkbox",
+    "smile"
+  ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "repository": "https://github.com/ppoulsen/react-fun-toggles.git",
+  "homepage": "https://github.com/ppoulsen/react-fun-toggles#readme",
+  "bugs": "https://github.com/ppoulsen/react-fun-toggles/issues",
   "author": "Paul Poulsen <ppoulsen21@gmail.com>",
   "license": "MIT",
   "private": false,

@@ -1,3 +1,3 @@
 import SmileyToggle from './SmileyToggle';
 
-export default SmileyToggle;
+export { SmileyToggle };
