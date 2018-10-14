@@ -1,5 +1,6 @@
 # Build
 lib
+.static
 
 # IDE
 .vscode
