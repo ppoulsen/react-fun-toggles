@@ -1,3 +1,3 @@
-import SmileyToggle from './SmileyToggle';
+import SmileyToggleDefault from './SmileyToggle';
 
-export { SmileyToggle };
+export { SmileyToggleDefault as SmileyToggle };
